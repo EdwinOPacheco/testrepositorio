@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ej14 - Formulario de registro</title>
     </head>
+    <style>
+        input[type=text], input[type=password], input[type=email] {
+            width: 100%;
+        }
+    </style>
     <body>
         <table>
             <tr>
@@ -17,17 +22,21 @@
                 <td width='15%'>Clave</td>
                 <td width='25%'><input type='password' id='pwdtxt'/></td>
                 <td width='10%'>&nbsp;</td>
-                <td width='15%'>Verificar</td>
+                <td width='25%'>Verificar</td>
                 <td width='25%'><input type='password' id='vertxt'/></td>
             </tr>
             <tr>
-            
+                <td width='15%'>Nombres</td>
+                <td width='85%' colspan="4"><input type='text' id='nomtxt'/></td>
             </tr>
             <tr>
-            
+                <td width='15%'>E-mail</td>
+                <td width='85%' colspan="4"><input type='email' id='ematxt'/></td>
             </tr>
             <tr>
-            
+                <td width='50%' colspan="3">&nbsp;</td>
+                <td width='25%'><input type='button' id='envbtn' value="Enviar"/></td>
+                <td width='25%'><input type='button' id='canbtn' value="Cancelar"/></td>
             </tr>
 
         </table>
